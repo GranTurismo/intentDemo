@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IntentDemo</string>
+    <string name="firstName">Firstname</string>
+    <string name="lastName">Lastname</string>
+    <string name="age">Age</string>
+    <string name="submit">Send</string>
+    <string name="result">RESULT</string>
+    <string name="name_result">Your firstname is %s</string>
+    <string name="lastname_result">Your lastname is %s</string>
+    <string name="age_result">Your age is %s</string>
+</resources>

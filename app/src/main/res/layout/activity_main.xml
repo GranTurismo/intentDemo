@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/firstNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/firstName"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/firstNameField"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintLeft_toRightOf="@id/firstNameLabel"
+        app:layout_constraintTop_toTopOf="@id/firstNameLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lastName"
+        android:id="@+id/lastNameLabel"
+        app:layout_constraintLeft_toLeftOf="@id/firstNameLabel"
+        app:layout_constraintTop_toBottomOf="@id/firstNameLabel"
+        android:layout_marginTop="24dp"
+        />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/lastNameLabel"
+        app:layout_constraintLeft_toRightOf="@id/lastNameLabel"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/lastNameField"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ageLabel"
+        android:text="@string/age"
+        app:layout_constraintLeft_toLeftOf="@id/lastNameLabel"
+        app:layout_constraintTop_toBottomOf="@id/lastNameLabel"
+        android:layout_marginTop="24dp"
+        />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ageField"
+        app:layout_constraintLeft_toRightOf="@id/ageLabel"
+        app:layout_constraintTop_toBottomOf="@id/lastNameField"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:text="@string/submit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ageField"
+        android:layout_marginTop="24dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
